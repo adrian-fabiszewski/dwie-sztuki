@@ -6,7 +6,10 @@ sudo: false
 branches:
   only:
   - master
- 
+
+notifications:
+  email: false
+
 cache:
   directories:
     - node_modules
