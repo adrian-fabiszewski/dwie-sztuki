@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dwie-sztuki"
+    }
+  },
+  "defaultProject": "dwie-sztuki",
+  "cli": {
+    "analytics": "91655a8e-b6f2-44fb-bb8a-fc7eb8e64b79"
+  }
 }
