@@ -1,1 +1,8 @@
-<p>cast works!</p>
+<h1>Zespół</h1>
+
+<ul *ngIf="castMembers">
+    <li *ngFor="let member of castMembers">
+        <img [src]="member.avatar_url">
+        <p>{{ member.first_name }} {{ member.last_name }}</p>
+    </li>
+</ul>

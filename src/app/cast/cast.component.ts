@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CastService } from './cast.service';
+import { Member } from './member';
 
 @Component({
   selector: 'app-cast',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CastComponent implements OnInit {
 
-  constructor() { }
+  castMembers: Member[];
+
+  constructor(private castService: CastService) { }
 
   ngOnInit(): void {
+    this.castService.getCastMambers().subscribe(data => {
+      this.castMembers = data;
+    }
+    );
   }
-
 }

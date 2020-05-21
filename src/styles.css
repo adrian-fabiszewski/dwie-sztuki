@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @font-face {
     font-family: 'Kenyan Coffee';
     font-style: normal;
@@ -9,11 +10,12 @@ body,
 html {
     height: 100%;
     margin: 0 auto;
+    background-color: #a2a2a2;
 }
 
 body {
-    font-family: 'Kenyan Coffee';
-    font-size: 32px;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 
 a {
